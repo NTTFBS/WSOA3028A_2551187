@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-
+    <meta name="description" content="My Website - Blog Post 1">
+    <meta name="author" content="Me">
+    <meta name="keywords" content="Blog, Blog Post 1">
+    <title>Blog Post 2</title>
+    <script type="module">
+        import { initialise } from "../scripts/menu.js";
+        initialise("Blog");
+    </script>
+    <script type="module" src="../scripts/readMoreFunction.js"></script>
 </head>
 
     
@@ -28,9 +34,13 @@
 
     <h2> Blog Post 2 - Week 2</h2>
     <h3> HTML Fundamentals and the World Wide Web</h3>
-     
+    <div class="blog-post">
+        <div class="preview">
    <p>Still very simple, but I added sections for the Blog, Essays and Portfolio sections. For now, I’ve decided to create these sections as templates for when I actually begin filling them with content. Currently, all my sections are on the homepage. I will change this as soon as I develop my folder structure. My goal for now, is to make it website quite simple, first learning the basics of HTML and folder structures before moving onto move complex stuff. At the moment, I’m considering a folder structure similar to this:</p>
-    <ul>
+        </div>
+
+        <div class="full-post">
+   <ul>
         <li>Index.html</li>
 
         <li> Blog Folder:
@@ -95,7 +105,9 @@
                    
                 </ul>
             </nav>
-
+        </div>
+        <button class="read-more">Read More</button>
+    </div>
 
         </body>
 </html>
