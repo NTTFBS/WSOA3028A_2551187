@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-
+    <meta name="description" content="My Website - Blog Post 3">
+    <meta name="author" content="Me">
+    <meta name="keywords" content="Blog, Blog Post 3">
+    <title>Blog Post 3</title>
+    <script type="module">
+        import { initialise } from "../scripts/menu.js";
+        initialise("Blog");
+    </script>
+    <script type="module" src="../scripts/readMoreFunction.js"></script>
 </head>
 
     
@@ -27,8 +33,12 @@
     <p> Welcome to the Blog Section. Here you will find updates, devlogs and more!</p>
 
     <h2> Blog Post 3 - Week 3</h2>
+    <div class="blog-post">
+        <div class="preview">
    <p>I have now created individual pages for the Blog, Essay and Portfolio pages. I have also added the HTML5 tag to my website. </p>
+        </div>
 
+        <div class="full-post">
    <p>I have added hyperlinks to all the pages of my website, making it easier to view each page. I have also added that text says “You are here” on the page that is currently being viewed, to help the viewer navigate the site easier.</p>
    
    <h2>Alignment</h2>
@@ -57,6 +67,9 @@
            
         </ul>
     </nav>
+        </div>
+        <button class="read-more">Read More</button>
+    </div>
 
 </body>
 </html>
