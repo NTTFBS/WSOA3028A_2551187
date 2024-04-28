@@ -13,6 +13,13 @@
         initialise("Blog");
     </script>
     <script type="module" src="../scripts/readMoreFunction.js"></script>
+    <style>
+        
+        .read-more:hover {
+            color: #fff; 
+            background-color: #007bff; 
+        }
+    </style>
 </head>
 
     
@@ -62,7 +69,13 @@
            
         </ul>
     </nav>
+    <script>
         
+        document.querySelector('.read-more').addEventListener('mouseover', function() {
+            console.log('Mouse is over the button');
+           
+        });
+    </script>
 
 </body>
 </html>
