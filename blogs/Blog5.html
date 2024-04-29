@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Website - Blog Post 5">
+    <meta name="author" content="Me">
+    <meta name="keywords" content="Blog, Blog Post 5">
+    <meta name="language" content="English">
+    <meta name="subject" content="Blog Post detailing Week 5">
+    <meta name="revised" content="Last revision date - 2024-04-29">
+
+    
+    <title>Blog Post 5</title>
+    <script type="module">
+        import { initialise } from "../scripts/menu.js";
+        initialise("Blog");
+    </script>
+    <script type="module" src="../scripts/readMoreFunction.js"></script>
+    <style>
+        
+        .read-more:hover {
+            color: #fff; 
+            background-color: #007bff; 
+        }
+    </style>
+</head>
+<body>
+    <header>2551187 WSOA3028A 2024</header>
+
+    <nav>
+    </nav>
+
+    <h1> Blog Section!</h1>
+    <p> Welcome to the Blog Section. Here you will find updates, devlogs and more!</p>
+    <main>
+    <article>
+    <h2> Blog Post 5 - Week 5</h2>
+    <time datetime="2024-03-16">March 16, 2024</time>
+    <div class="blog-post">
+        <div class="preview">
+            <p>South African websites that have been an inspiration.</p>
+        </div>
+        <div class="full-post">
+            <p>The website I'm probably drawing the most inspiration from would be: https://www.sae.edu.za/courses/game/higher-certificate-in-game-design-and-production-full-time/</p>
+            <p>It accurately represents the look I'm going for, black background and a simple 4 colour scheme, which I think captures the "sleek, modern feel". Some extra information is displayed using a light shade of grey, which my be difficult for some users to read immediately </p>
+        </div>
+        <footer>
+        <button class="read-more">Read More</button>
+        </footer>
+    </article>
+    </main>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="Blog4.html">Blog 4</a> </li>
+            <li><a href="Blog6.html">Blog 6</a> </li>
+        </ul>
+    </nav>
+    <script>
+        
+        document.querySelector('.read-more').addEventListener('mouseover', function() {
+            console.log('Mouse is over the button');
+           
+        });
+    </script>
+</body>
+</html>
