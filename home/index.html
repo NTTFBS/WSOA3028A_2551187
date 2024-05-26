@@ -4,23 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2551187's Website">
+    <meta name="author" content="Student 2551187">
+    <meta name="keywords" content="Homepage">
+    <meta name="language" content="English">
+    <meta name="subject" content="Section containing homepage">
+    <meta name="revised" content="Last revision date - 2024-04-28">
+
     <title>Homepage</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="module">
         import { initialise } from "./scripts/menu.js";
-        initialise("Blog");
+        initialise("Home");
     </script>
-
 </head>
-
-
 <body>
-    
-    <h1> Homepage!</h1>
-    <p> Welcome to the homepage. This is page will provide links to all other pages!</p>
 
-    <h2> Explore</h2>
-    <nav>
-    </nav>
+    <header>
+        <nav> 
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="home-image-container">
+            <img src="ImagesFolder/HomepageImage.jpg" alt="Image illustrating a screenshot from a level of a 2d Side Scroller Game Project.">
+            <div class="overlay"></div>
+            <div class="text-over-image">
+                <h1>WELCOME</h1>
+                <p>Art, games and designs. Click to explore the creative mind.</p>
+
+                <a href="portfolio/index.html" class="main-button-blue">// EXPLORE</button> </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>BLOGS</h1>
+        <p>Want to know what I learned while making this website? This section is for you.</p>
+        <div class="blog-buttons">
+            <a href="blogs/Blog.html" class="main-button-blue">Blog 1 - HTML Fundamentals and the World Wide Web </a>
+            <a href="blogs/Blog2.html" class="main-button-blue">Blog 2 - Dipping Into The HTML Ocean</a>
+            <a href="blogs/Blog3.html" class="main-button-blue">Blog 3 - 3 Weeks, 3 Webpages</a>
+            
+        </div>
+        <a href="blogs/index.html" class="main-button-blue"><i>// MORE BLOGS</i></a> 
+    </div>
+
+   
+    <div class="section">
+        <h1>DESIGN</h1>
+        <p>Want to know how the website ended up with the final design? Have a peek at the design process.</p>
+        <a href="design/index.html" class="main-button-white">// DESIGN</a>
+    </div>
+
+
+
+
+    
+    
+    
 
 </body>
 </html>
