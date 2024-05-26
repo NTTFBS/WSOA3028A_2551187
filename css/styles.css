@@ -68,7 +68,6 @@ nav li a:hover::after {
 
 
 .section {
-   
     padding: 20px;
     text-align: center;
 }
@@ -93,8 +92,6 @@ h1, h2 {
 }
 
 img {
-    width: 100%;
-    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -236,26 +233,4 @@ body::after {
         transform: translateY(0);
         visibility: visible;
     }
-
-
-
-    
-}
-
-
-
-#nav-links {
-    display: none;
-}
-
-#nav-links.show {
-    display: block;
-}
-
-h1 {
-    font-size: 2.5em; 
-}
-
-h2 {
-    font-size: 2em; 
 }
