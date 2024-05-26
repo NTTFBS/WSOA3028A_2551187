@@ -57,14 +57,20 @@ nav li a:hover::after {
     text-align: center;
 }
 
-.section:nth-child(even) {
-    background-color: #A9A9A9; 
+.section:nth-child(3n+1) {
+    background-color: #00d5e4; 
+    color: #FFFFFF; 
 }
 
-.section:nth-child(odd) {
+.section:nth-child(3n+2) {
+    background-color: #000000; 
+    color: #000000; 
+}
+
+.section:nth-child(3n) {
     background-color: #FFFFFF; 
+    color: #000000;
 }
-
 
 h1, h2 {
     text-align: center;
@@ -79,7 +85,7 @@ p {
 body::after {
     content: "";
     display: block;
-    background-color: #A9A9A9;
+    background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px; 
