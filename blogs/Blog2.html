@@ -11,6 +11,8 @@
     <meta name="subject" content="Blog Post detailing Week 3">
     <meta name="revised" content="Last revision date - 2024-04-28">
     <title>Blog Post 2</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script type="module">
         import { initialise } from "../scripts/menu.js";
         initialise("Blog");
@@ -103,19 +105,17 @@
             </div>
         <footer>
             <button class="read-more">Read More</button>
+            <div style="text-align: center;">
+                <a href="Blog.html"class="main-button-blue">// PREVIOUS POST</button> </a>
+                <a href="Blog3.html"class="main-button-blue">// NEXT POST</button> </a>
+            </div>
         </footer>
             </article>
         </main>
         </div>
 
-             <nav>
-                <ul>
-                    
-                    <li><a href="Blog.html">Blog 1</a> </li>
-                    <li><a href="Blog3.html">Blog 3</a> </li>
-                   
-                </ul>
-            </nav>
+           
+        
             <script>
         
                 document.querySelector('.read-more').addEventListener('mouseover', function() {

@@ -118,8 +118,8 @@ body::after {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    font-weight: bold; /* Make text bold */
-    font-style: italic; /* Make text italic */
+    font-weight: bold; 
+    font-style: italic; 
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 20px; 
@@ -157,9 +157,9 @@ body::after {
 .blog-buttons a{
     
     background-color: #00d5e4;
-    padding: 20px 40px; /* Increase padding */
-    font-size: 20px; /* Increase font size */
-    font-weight: bold; /* Make text bold */
+    padding: 20px 40px; 
+    font-size: 20px;
+    font-weight: bold; 
     border: 3px solid #002929;
     display: flex;
     justify-content: space-between;

@@ -13,6 +13,8 @@
 
     
     <title>Blog Post 4</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script type="module">
         import { initialise } from "../scripts/menu.js";
         initialise("Blog");
@@ -47,17 +49,16 @@
         </div>
         <footer>
         <button class="read-more">Read More</button>
+        <div style="text-align: center;">
+            <a href="Blog3.html"class="main-button-blue">// PREVIOUS POST</button> </a>
+            <a href="Blog5.html"class="main-button-blue">// NEXT POST</button> </a>
+        </div>
         </footer>
     </article>
     </main>
     </div>
 
-    <nav>
-        <ul>
-            <li><a href="Blog3.html">Blog 3</a> </li>
-            <li><a href="Blog5.html">Blog 5</a> </li>
-        </ul>
-    </nav>
+   
     <script>
         
         document.querySelector('.read-more').addEventListener('mouseover', function() {
