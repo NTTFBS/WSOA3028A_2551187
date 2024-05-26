@@ -1,5 +1,6 @@
+
 nav {
-    background-color: #007BFF;
+    background-color: #000000; 
     overflow: hidden;
     padding: 10px;
 }
@@ -19,7 +20,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
@@ -29,10 +30,30 @@ nav li a {
 
 
 nav li a:hover {
-    background-color: #0056b3;
+    background-color: #808080;
 }
 
 
 nav li a.active {
-    background-color: #4CAF50;
+    background-color: #4CAF50; 
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+body::after {
+    content: "";
+    display: block;
+    background-color: #A9A9A9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; 
 }
