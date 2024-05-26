@@ -8,6 +8,13 @@ const menuItems = [
     { name: "Design", href: `${root}/design/index.html`, id: "design" },
 ];// This makes linking pages much easier, something my original folder structure for Website 1 was missing. I can definitely see how js can make this process much easier.
 
+
+export function addFooter() {
+    const footer = document.createElement("footer");
+    footer.innerText = "Copyright 2551187 2024.";
+    document.body.appendChild(footer);
+}
+
 export function initialise(currentPage) {
     const nav = document.querySelector("nav");
     const ul = document.createElement("ul");
@@ -36,4 +43,6 @@ export function initialise(currentPage) {
             console.log(`You clicked on ${event.target.innerText}`);
         }
     });
+
+    
 }
