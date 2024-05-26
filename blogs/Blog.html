@@ -14,11 +14,21 @@
     
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
+
+    <script type="module">
+        import { initialise, readMoreFunction } from "../scripts/menu.js";
+        initialise("Blog");
+        document.querySelector(".read-more").addEventListener("click", readMoreFunction);
+    </script>
+
+
     <script type="module">
         import { initialise } from "../scripts/menu.js";
         initialise("Blog");
     </script>
+    
     <script type="module" src="../scripts/readMoreFunction.js"></script>
+    
     <style>
         .read-more:hover {
             color: #fff; 
@@ -70,7 +80,7 @@
                             <h3> References:</h3>
                             <p>Lawson, Bruce. (2010), Why You Should Choose HTML5, Smashing Magazine, 2010.</p>
 
-                        </div>
+                    </div>
                 </div>
                 <footer>
                     <button class="read-more">Read More</button>
