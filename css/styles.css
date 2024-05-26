@@ -31,6 +31,8 @@ nav li a {
 
 nav li a:hover {
     background-color: #808080;
+    text-decoration: underline;
+    text-decoration-color: #00eaff; 
 }
 
 
