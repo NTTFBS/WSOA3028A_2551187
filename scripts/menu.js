@@ -15,23 +15,6 @@ export function addFooter() {
     document.body.appendChild(footer);
 }
 
-export function readMoreFunction() {
-    var dots = document.querySelector(".preview");
-    var moreText = document.querySelector(".full-post");
-    var btnText = document.querySelector(".read-more");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-
-
 export function initialise(currentPage) {
     const nav = document.querySelector("nav");
     const ul = document.createElement("ul");
