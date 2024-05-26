@@ -13,7 +13,7 @@ let blogPosts = [
   
   let sortedPosts = blogPosts;
 
-  let blogList = document.querySelector('#blog-list'); // Changed 'var' to 'let'
+  let blogList = document.querySelector('#blog-list'); // Changed 'var' to 'let'.
   
 
   function sortPosts() {

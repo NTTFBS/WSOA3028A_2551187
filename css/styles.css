@@ -1,0 +1,38 @@
+/*nav {
+    background-color: #007BFF;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 12px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+nav li a:hover {
+    background-color: #0056b3;
+}
+
+
+nav li a.active {
+    background-color: #4CAF50;
+}*/
