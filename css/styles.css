@@ -11,6 +11,9 @@ body {
     font-family: 'Source Code Pro', sans-serif;
 }
 
+
+
+
 nav {
     background-color: #000000; 
     overflow: hidden;
@@ -90,7 +93,7 @@ h1, h2 {
 
 
 p {
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -132,7 +135,7 @@ body::after {
 
 
 .main-button-blue {
-    background-color: #00d5e4; 
+    background-color: #00c0cd; 
     color: #FFFFFF; 
     border: none;
     padding: 15px 30px;
@@ -156,7 +159,7 @@ body::after {
 
 .blog-buttons a{
     
-    background-color: #00d5e4;
+    background-color: #00c0cd;
     padding: 20px 40px; 
     font-size: 20px;
     font-weight: bold; 
@@ -213,3 +216,16 @@ body::after {
 }
 
 
+.slide-up {
+    transform: translateY(20px);
+    visibility: hidden;
+    animation: slideUp 0.5s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}

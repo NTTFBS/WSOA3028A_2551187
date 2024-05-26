@@ -11,6 +11,7 @@
     <meta name="subject" content="Section containing all blog posts">
     <meta name="revised" content="Last revision date - 2024-04-28">
     <title>Blog Section</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script type="module">
         import { initialise } from "../scripts/menu.js";
         initialise("Blog");
@@ -18,30 +19,64 @@
     <script type="module" src="../scripts/readMoreFunction.js"></script>
     <script type="module" src="../scripts/blog.js"></script>
     
+
+    <script>
+        let buttons = document.querySelectorAll('.main-button-blue');
+        buttons.forEach(function(button, index) {
+            button.style.setProperty('--i', index);
+        });
+    
+        window.addEventListener('scroll', function() {
+            buttons.forEach(function(button) {
+                let buttonTop = button.getBoundingClientRect().top;
+                let windowInnerHeight = window.innerHeight;
+                if (buttonTop < windowInnerHeight) {
+                    button.classList.add('slide-up');
+                }
+            });
+        });
+    </script>
+    
 </head>
 <body>
-    <h1> Blog Section!</h1>
-    <p> Welcome to the Blog Section. Here you will find updates, devlogs and more!</p>
+    <div class="section">
+        <div class="home-image-container">
+            <img src="ImagesFolder/HomepageImage.jpg" alt="Image illustrating a screenshot from a level of a 2d Side Scroller Game Project.">
+            <div class="overlay"></div>
+            <div class="text-over-image">
+                <h1>BLOGS, BLOGS & BLOGS...</h1>
+                <p style="text-align: center;">Find out what I learned while making this website!</p>
 
-    <h2> Explore</h2> 
+                
+            </div>
+        </div>
+    </div>
     <header>
         <nav> 
         </nav>
     </header>
 
-    <h2> Blog Posts </h2>
-    <ul id="blog-posts">
-       <li><a href="Blog.html">Blog Post 1 - Week 1</a></li>
-       <li><a href="Blog2.html">Blog Post 2 - Week 2</a></li>
-       <li><a href="Blog3.html">Blog Post 3 - Week 3</a></li>
-       <li><a href="Blog4.html">Blog Post 4 - Week 4</a></li>
-       <li><a href="Blog5.html">Blog Post 5 - Week 5</a></li>
-       <li><a href="Blog6.html">Blog Post 6 - Week 6</a></li>
-       <li><a href="Blog7.html">Blog Post 7 - Week 7</a></li>
-       <li><a href="Blog8.html">Blog Post 8 - Week 8</a></li>
-       <li><a href="Blog9.html">Blog Post 9 - Week 9</a></li>
-       <li><a href="Blog10.html">Blog Post 10 - Week 10</a></li>
-    </ul>
+    <div class="section">
+        <h1>WEEKLY UPDATES</h1>
+        
+        <div class="blog-buttons">
+            <a href="Blog.html" class="main-button-blue">Blog 1 - HTML Fundamentals and the World Wide Web </a>
+            <a href="Blog2.html" class="main-button-blue">Blog 2 - Dipping Into The HTML Ocean</a>
+            <a href="Blog3.html" class="main-button-blue">Blog 3 - 3 Weeks, 3 Webpages</a>
+            <a href="Blog4.html" class="main-button-blue">Blog 4 - Week 4</a>
+            <a href="Blog5.html" class="main-button-blue">Blog 5 - Week 5</a>
+            <a href="Blog6.html" class="main-button-blue">Blog 6 - Week 6</a>
+            <a href="Blog7.html" class="main-button-blue">Blog 7 - Week 7</a>
+            <a href="Blog8.html" class="main-button-blue">Blog 8 - Week 8</a>
+            <a href="Blog9.html" class="main-button-blue">Blog 9 - Week 9</a>
+            <a href="Blog10.html" class="main-button-blue">Blog 10 - Week 10</a>
+            <a href="Blog11.html" class="main-button-blue">Blog 11 - Week 11</a>
+            <a href="Blog12.html" class="main-button-blue">Blog 12 - Week 12</a>
+            <a href="Blog13.html" class="main-button-blue">Blog 13 - Week 13</a>
+            
+        </div>
+        
+    </div>
 
 </body>
 </html>
