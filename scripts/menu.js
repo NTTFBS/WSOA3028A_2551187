@@ -15,6 +15,8 @@ export function addFooter() {
     document.body.appendChild(footer);
 }
 
+
+
 export function initialise(currentPage) {
     const nav = document.querySelector("nav");
     const ul = document.createElement("ul");
@@ -38,6 +40,14 @@ export function initialise(currentPage) {
     nav.appendChild(ul);
 
    
+
+    document.querySelector('.hamburger-menu').addEventListener('click', () => {
+        const navLinks = document.querySelector('nav ul');
+        navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
+    });
+
+
+
     nav.addEventListener('click', (event) => {
         if (event.target.tagName === 'A') {
             console.log(`You clicked on ${event.target.innerText}`);
@@ -46,3 +56,12 @@ export function initialise(currentPage) {
 
     
 }
+
+
+
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+    document.getElementById('nav-links').classList.toggle('show');
+});
+
+
+
