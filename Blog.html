@@ -7,12 +7,16 @@
     <meta name="description" content="My Website - Blog Post 1">
     <meta name="author" content="Me">
     <meta name="keywords" content="Blog, Blog Post 1">
-    <title>Blog Post 4</title>
-    <script type="module">
-        import { initialise } from "../scripts/menu.js";
-        initialise("Blog");
-    </script>
-    <script type="module" src="../scripts/readMoreFunction.js"></script>
+    <meta name="language" content="English">
+    <meta name="subject" content="Blog Post detailing Week 3">
+    <meta name="revised" content="Last revision date - 2024-04-28">
+    <title>Blog Post 1</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+    <script type="module" src="../scripts/blog.js"></script>
+    <script type="module" src="../scripts/readMoreFunction,js"></script>
+    
 </head>
 
     
@@ -20,19 +24,17 @@
     <header>2551187 WSOA3028A 2024</header>
 
     <nav>
-        <ul>
-            <li> Blog - You are here</li>
-            <li><a href="index.html">Homepage</a> </li>
-            <li><a href="Essays.html">Essays</a> </li>
-            <li><a href="Portfolio.html">Portfolio</a> </li>
-            <li><a href="DesignProcess.html">Design Process</a> </li>
-        </ul>
     </nav>
-
+    <div class="section" style="background-color: #00d5e4; color: white;">
     <h1> Blog Section!</h1>
-    <p> Welcome to the Blog Section. Here you will find updates, devlogs and more!</p>
-
+    <p style="text-align: center;"> Welcome to the Blog Section. Here you will find updates, devlogs and more!</p>
+    </div>
+    
+<main>
+    <article>
+        <div class="section" style="background-color: white; color: black;">
     <h2> Blog Post 1 - Week 1</h2>
+    <time datetime="2024-02-16">February 16, 2024</time>
     <h3> HTML Fundamentals and the World Wide Web</h3>
     <div class="blog-post">
         <div class="preview">
@@ -48,7 +50,7 @@
         I like the ‘modern look’ of the website, it’s simple 3 colour theme and the images that slide up when scrolling. It makes it really easy to read the important bits in white, which are contrasted against by the black background. Additional information is shown using grey text.</p>
         
         <p>I found the reading on “Why you should choose HTML5 (2010)” by Lawson quite interesting, as it discusses a few HTML elements that are similar, but have different outputs. Lawson mentions how the use of the Section tag has no point as “Unfortunately, however, no browser implements HTML5 outlining, so there is no point in
-        using Section tag” (Lawson, 2010). This made me realize that a website is only as effective as it’s code, but it’s code is only as effective as the browser it runs on.</p>
+        using Section tag” <cite>(Lawson, 2010)</cite>. This made me realize that a website is only as effective as it’s code, but it’s code is only as effective as the browser it runs on.</p>
         
         <p> With that being said, my goal for this course is to learn what makes a good website and how to apply it in practice. I’d like to learn about the ‘psychology’ of good UI/UX and what makes a user more likely to perform desired actions on a website. For now, I understand that having a simple design that is easy to navigate is important, but I would like to expand my understanding by learning how to properly implement that design across multiple websites, with different designs. </p>
         
@@ -61,17 +63,22 @@
 
                 <h3> References:</h3>
                 <p>Lawson, Bruce. (2010), Why You Should Choose HTML5, Smashing Magazine, 2010.</p>
+            </div>
          </div>
+        <footer>
          <button class="read-more">Read More</button>
+         <div style="text-align: center;">
+            <a href="Blog.html"class="main-button-blue">// PREVIOUS POST</button> </a>
+            <a href="Blog2.html"class="main-button-blue">// NEXT POST</button> </a>
+        </div>
+       
+        </footer>
+         </article>
+    </main>
     </div>
 
-                <nav>
-                    <ul>
-                        
-                        <li><a href="Blog2.html">Blog 2</a> </li>
-                       
-                    </ul>
-                </nav>
+                
+            
      
 </body>
 </html>
