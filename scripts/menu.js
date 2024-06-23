@@ -45,4 +45,30 @@ export function initialise(currentPage) {
     });
 
     
+
+
+    
 }
+
+/* test hamburger menu */
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+});
+
+
+
+
+const closeBtn = document.querySelector('.close-btn');
+closeBtn.addEventListener('click', () => {
+    nav.classList.remove('open');
+});
+
+
+closeBtn.addEventListener('click', () => {
+    nav.classList.remove('open');
+    overlay.style.display = 'none';
+});
+

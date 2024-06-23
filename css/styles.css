@@ -13,6 +13,11 @@ body {
 
 
 
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
 
 nav {
     background-color: #000000; 
@@ -244,4 +249,56 @@ body::after {
 .read-more:hover {
     color: #fff; 
     background-color: #007bff; 
+}
+
+
+
+
+
+/* test hamburger menu */
+
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        z-index: 1001;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 200px; 
+        height: 100%;
+        background-color: #000000;
+    }
+    nav.open ul {
+        display: flex;
+    }
+}
+
+.close-btn {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    right: 0; 
+    z-index: 1002; 
+}
+
+@media (max-width: 600px) {
+    nav.open .close-btn {
+        display: block;
+    }
 }
