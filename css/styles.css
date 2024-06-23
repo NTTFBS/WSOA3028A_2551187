@@ -67,6 +67,10 @@ nav li a:hover::after {
 }
 
 
+.active {
+    color: #00d5e4;
+}
+
 .section {
     padding: 20px;
     text-align: center;
