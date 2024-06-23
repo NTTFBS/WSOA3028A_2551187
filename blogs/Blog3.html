@@ -13,18 +13,9 @@
     <title>Blog Post 3</title>
 
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <script type="module">
-        import { initialise } from "../scripts/menu.js";
-        initialise("Blog");
-    </script>
+    <script type="module" src="../scripts/blog.js"></script>
     <script type="module" src="../scripts/readMoreFunction.js"></script>
-    <style>
-        
-        .read-more:hover {
-            color: #fff; 
-            background-color: #007bff; 
-        }
-    </style>
+    
 </head>
 
     
@@ -83,13 +74,7 @@
 </main>
     </div>
    
-    <script>
-        
-        document.querySelector('.read-more').addEventListener('mouseover', function() {
-            console.log('Mouse is over the button');
-           
-        });
-    </script>
+   
 
 </body>
 </html>

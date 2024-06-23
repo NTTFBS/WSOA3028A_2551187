@@ -12,30 +12,10 @@
     <meta name="revised" content="Last revision date - 2024-04-28">
     <title>Blog Section</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <script type="module">
-        import { initialise } from "../scripts/menu.js";
-        initialise("Blog");
-    </script>
+    <script type="module" src="../scripts/blogIndex.js"></script>
     <script type="module" src="../scripts/readMoreFunction.js"></script>
     <script type="module" src="../scripts/blog.js"></script>
     
-
-    <script>
-        let buttons = document.querySelectorAll('.main-button-blue');
-        buttons.forEach(function(button, index) {
-            button.style.setProperty('--i', index);
-        });
-    
-        window.addEventListener('scroll', function() {
-            buttons.forEach(function(button) {
-                let buttonTop = button.getBoundingClientRect().top;
-                let windowInnerHeight = window.innerHeight;
-                if (buttonTop < windowInnerHeight) {
-                    button.classList.add('slide-up');
-                }
-            });
-        });
-    </script>
     
 </head>
 <body>

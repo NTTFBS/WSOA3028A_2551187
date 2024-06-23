@@ -236,3 +236,8 @@ body::after {
         visibility: visible;
     }
 }
+
+.read-more:hover {
+    color: #fff; 
+    background-color: #007bff; 
+}
