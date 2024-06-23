@@ -69,7 +69,6 @@ closeBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     nav.classList.remove('open');
-    overlay.style.display = 'none';
 });
 
 

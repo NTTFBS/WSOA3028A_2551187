@@ -304,4 +304,34 @@ nav ul {
     }
 }
 
+nav {
+    display: none; 
+    background-color: #000000; 
+    overflow: hidden;
+    padding: 10px;
+}
 
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #242424;
+    z-index: 1002;
+}
+
+@media (max-width: 600px) {
+    .mobile-nav {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    nav {
+        display: block; 
+    }
+}
+
+.reference-list {
+    max-height: 400px; 
+    overflow-y: auto;
+}
