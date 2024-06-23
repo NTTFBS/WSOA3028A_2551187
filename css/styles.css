@@ -358,3 +358,23 @@ h1 {
         typing 3s steps(30, end),
         blink-caret .5s step-end infinite;
 }
+
+
+
+.white-text {
+    color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.blog-section {
+    background-color: #00d5e4;
+    color: white;
+    text-align: center;
+}
+
+.left-align-text {
+    text-align:  left;
+}
